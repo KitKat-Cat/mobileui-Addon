@@ -34,6 +34,36 @@
     <link rel="stylesheet" href="mobileui.github.io/mobileui/imports.css">
     <link rel="stylesheet" href="mobileui.github.io/css/master.css">
   </head>
+
+    <link rel="stylesheet" href="/mobileui/imports.css">
+    <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+window.alert = function(Message, title) {
+if (title === undefined) {
+ title = "This page says:";
+}
+    var myElementToShow = document.getElementById("dialog");
+    myElementToShow.innerHTML = Message + "<button title='Close' class='green'><span class='ui-button-icon-space'></span>Close</button>"; 
+    myElementToShow.setAttribute("title", title);
+$( "#dialog" ).dialog();
+}
+});
+  </script>
+<style>
+  .ui-dialog-titlebar-close,
+  .ui-dialog-titlebar {
+  	display: none;
+  }
+  button[title="Close"] {
+    width: 100%;
+  }
+  </style>
+	</head>
   <body>
     <div class="top font-dosis">
       <a href="/"><img src="mobileui.github.io/img/logo.png" alt="MobileUI"></a>
@@ -893,6 +923,8 @@
   <h1 id="titleDiscoveryNow" class="text-blue">DiscoveryNow</h1>
   <p class="text-grey-300">Find good music all the day for you</p>
   <div class="space"></div>
+  <div id="dialog" title=""></div>
+  <button onClick="window.alert('I am a alert box!');">click me!</button>
   <div class="space"></div>
   <div class="row">
     <div class="col-90 col-center">
