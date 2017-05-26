@@ -42,18 +42,39 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
+var modal = document.getElementById('dialog');
   $( function() {
 window.alert = function(Message, title) {
 if (title === undefined) {
  title = "This page says:";
 }
-    var myElementToShow = document.getElementById("dialog");
-    myElementToShow.innerHTML = Message + "<button title='Close' class='green'><span class='ui-button-icon-space'></span>Close</button>"; 
+    myElementToShow.innerHTML = Message; 
     myElementToShow.setAttribute("title", title);
-$( "#dialog" ).dialog();
+	modal.style.display = "block";
 }
 });
-  </script>
+
+// Get the modal
+
+// Get the button that opens the modal
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 <style>
   .ui-dialog-titlebar-close,
   .ui-dialog-titlebar {
@@ -102,7 +123,59 @@ $( "#dialog" ).dialog();
     <h2 class="title-doc" id="getting-started">Getting started</h2>
     <p>
       MobileUI was created thinking of making your hybrid application <strong>faster</strong> and <strong>smaller</strong>, since you only install what you
-      are really going to use for UI.
+      are really going to use for UI.	
+
+	<style>
+		/* The dialog (background) */
+#dialog {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#dialog-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+	</style>    
+ <div id="dialog" class="modal" title="">
+
+  <!-- Modal content -->
+  <div id="dialog-content">
+    <span class="close">&times;</span>
+    <p id="dialog-text">Some text in the Modal..</p>
+  </div>
+
+</div>
+	  
+  <button onClick="window.alert('I am a alert box!');">click me!</button>
+
     </p>
     <p>
       Certainly you will love using it in  <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">Progressive Web Apps</a>
@@ -923,8 +996,6 @@ $( "#dialog" ).dialog();
   <h1 id="titleDiscoveryNow" class="text-blue">DiscoveryNow</h1>
   <p class="text-grey-300">Find good music all the day for you</p>
   <div class="space"></div>
-  <div id="dialog" title=""></div>
-  <button onClick="window.alert('I am a alert box!');">click me!</button>
   <div class="space"></div>
   <div class="row">
     <div class="col-90 col-center">
