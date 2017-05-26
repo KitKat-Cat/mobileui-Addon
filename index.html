@@ -119,7 +119,7 @@
 <h2>Animated Modal</h2>
 
 <!-- Trigger/Open The Modal -->
-<button class="green" onclick="UIalert('sometext','a title')" title="Close">Open</button>
+<button class="blue" onclick="UIalert('sometext','a title')">Open</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -127,11 +127,11 @@
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
-      <button class="close">OK</button>
       <h2 class="modal-title">Title</h2>
     </div>
-    <div class="modal-body">
-	    <p>Text</p>
+    <div>
+	    <p class="modal-body">Text</p>
+	    <button class="close" title="Close">OK</button>
     </div>
   </div>
 
