@@ -43,20 +43,18 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
 var modal = document.getElementById('dialog');
-  $( function() {
+var dialogContent = document.getElementById('dialog-content');
+$( function() {
 window.alert = function(Message, title) {
 if (title === undefined) {
  title = "This page says:";
 }
-    myElementToShow.innerHTML = Message; 
-    myElementToShow.setAttribute("title", title);
+    dialogContent.innerHTML = Message; 
+    dialogContent.setAttribute("title", title);
 	modal.style.display = "block";
 }
 });
 
-// Get the modal
-
-// Get the button that opens the modal
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
