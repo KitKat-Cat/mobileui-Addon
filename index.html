@@ -119,7 +119,6 @@
 <h2>Animated Modal</h2>
 
 <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
 <button onclick="UIalert('sometext','a title')">Open</button>
 
 <!-- The Modal -->
@@ -166,14 +165,17 @@ window.onclick = function(event) {
     }
 }
 
-	function UIalert(Message, title) {
+  $( function() {
+window.alert = function(Message, title) {
+	<!--	function UIalert(Message, title) { --->
 		if (title === undefined) {
 			title = "This page says:";
 		}
 	    document.getElementsByClassName("modal-body").innerHTML = Message; 
 	    document.getElementsByClassName("modal-title").innerHTML = title;
 		modal.style.display = "block";
-	};
+<!--	};--->
+						 })
   </script>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
