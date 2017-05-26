@@ -46,7 +46,7 @@
 		 border-bottom-right-radius: 10px 10px;
          }
 /* The Modal (background) */
-#modal {
+.modal {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .4);
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -133,7 +133,7 @@
 <button class="blue" onclick="UIalert('I am The Body Of The Modal And My Text Is <code>Customizable</code>!', 'Mee Too!');">Open</button>
 
 <!-- The Modal -->
-<div id="myModal modal" style="">
+<div id="myModal" clas="modal" style="">
 
   <!-- Modal content -->
   <div id="modal-content">
@@ -151,7 +151,7 @@
    </body>
 <script>
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementsByClassName('modal');
 
 // Get the <button> element that closes the modal
 var closeButton = document.getElementsByClassName("close")[0];
