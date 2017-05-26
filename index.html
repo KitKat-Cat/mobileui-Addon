@@ -151,18 +151,18 @@
    </body>
 <script>
 // Get the modal
-var modal = document.getElementsByClassName('modal');
+var MODAL = document.getElementsByClassName('modal');
 
 // Get the <button> element that closes the modal
 var closeButton = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the close button then close the modal
 closeButton.onclick = function() {
-    modal.style.display = "none";
+    MODAL.style.display = "none";
 }
 
 function UIalert(Message, title) {
-	var modal = document.getElementsByClassName('modal');
+	var Modal = document.getElementsByClassName('modal');
 	if (title === undefined) {
 		title = "This page says:";
 	}
@@ -170,7 +170,7 @@ function UIalert(Message, title) {
 	var modalBody = document.getElementById("modal-body");
         modalBody.innerHTML = Message; 
         modalTitle.innerHTML = title;
-	modal.style.display = "block";
+	Modal.style.display = "block";
 };
   </script>
 
