@@ -165,8 +165,10 @@ closeButton.onclick = function() {
 		if (title === undefined) {
 			title = "This page says:";
 		}
-	    document.getElementsByClassName("modal-body").innerHTML = Message; 
-	    document.getElementsByClassName("modal-title").innerHTML = title;
+			var modalTitle = document.getElementsByClassName("modal-title");
+			var modalBody = document.getElementsByClassName("modal-body");
+	    modalBody.innerHTML = Message; 
+	    modalTitle.innerHTML = title;
 		modal.style.display = "block";
     	};
   </script>
