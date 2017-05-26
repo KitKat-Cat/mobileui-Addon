@@ -43,10 +43,10 @@ $( function() {
 window.alert = function(Message, title) {
 if (title === undefined) {
  title = "This page says:";
-}
+    }
     dialogContent.innerHTML = Message; 
     dialogContent.setAttribute("title", title);
-	modal.style.display = "block";
+    modal.style.display = "block";
 }
 });
 
