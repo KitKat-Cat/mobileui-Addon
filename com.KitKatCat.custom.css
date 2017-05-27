@@ -3,6 +3,10 @@
          #ui-dialog-titlebar {
 	         display: none;
          }
+	#modal-header {
+		background-color: #ffffff;
+	}
+	modal-title
          button[title="Close"] {
 	         width: 100%;
 		 background-color: rgba(0,0,0,0);
