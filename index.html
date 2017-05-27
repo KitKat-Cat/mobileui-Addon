@@ -47,30 +47,6 @@
 <button class="blue" onclick="UIalert('I am The Body Of The Modal And My Text Is <code>Customizable</code>!', 'Mee Too!');">Open</button>
 
    </body>
-<script>
-// Get the modal
-var MODAL = document.getElementById('myModal');
-
-// Get the <button> element that closes the modal
-var closeButton = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the close button then close the modal
-closeButton.onclick = function() {
-    MODAL.style.display = "none";
-}
-
-function UIalert(Message, title) {
-	var Modal = document.getElementById('myModal');
-	if (title === undefined) {
-		title = "This page says:";
-	}
-	var modalTitle = document.getElementById("modal-title");
-	var modalBody = document.getElementById("modal-body");
-        modalBody.innerHTML = Message; 
-        modalTitle.innerHTML = title;
-	Modal.style.display = "block";
-};
-  </script>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
