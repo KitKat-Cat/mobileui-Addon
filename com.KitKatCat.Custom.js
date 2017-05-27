@@ -13,7 +13,7 @@ document.write("	    <button class=\"close\" title=\"Close\">OK<\/button>");
 document.write("    <\/div>");
 document.write("    <\/div>");
 document.write("  <\/div>");
-document.write("<\/div>'");
+document.write("<\/div>");
 	
 // Get the modal
 var MODAL = document.getElementById('myModal');
