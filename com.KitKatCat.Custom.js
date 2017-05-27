@@ -22,5 +22,3 @@ function UIalert(Message, title) {
         modalTitle.innerHTML = title;
 	Modal.style.display = "block";
 };
-  
-};
