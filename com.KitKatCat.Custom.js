@@ -1,15 +1,4 @@
 /**All Javascript Code Made By @KitKat-Cat Will Go Here And Any Or All Code May Break At Any Time In The Future.**/
-	
-// Get the modal
-var MODAL = document.getElementById('myModal');
-
-// Get the <button> element that closes the modal
-var closeButton = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the close button then close the modal
-closeButton.onclick = function() {
-    MODAL.style.display = "none";
-}
 document.write("<!-- The Modal -->");
 document.write("<div id=\"myModal\" class=\"modal\" style=\"\">");
 document.write("  <!-- Modal content -->");
@@ -25,6 +14,17 @@ document.write("    <\/div>");
 document.write("    <\/div>");
 document.write("  <\/div>");
 document.write("<\/div>'");
+	
+// Get the modal
+var MODAL = document.getElementById('myModal');
+
+// Get the <button> element that closes the modal
+var closeButton = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the close button then close the modal
+closeButton.onclick = function() {
+    MODAL.style.display = "none";
+}
 
 function UIalert(Message, title) {
 	var Modal = document.getElementById('myModal');
