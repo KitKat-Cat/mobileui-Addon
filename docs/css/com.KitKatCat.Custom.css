@@ -78,12 +78,10 @@ body {
 #modal-header {
     font-size: 2.5rem;
     padding: 24px 24px 0;
-    background-color: #5cb85c;
     color: black;
-	 border-top-left-radius: 10px 10px;
-	 border-top-right-radius: 10px 10px;
 	font-weight: 400;
 	line-height: 40px;
+	height: 80px;
 }
 #modal-body {padding: 2px 16px;}
 .actions {
