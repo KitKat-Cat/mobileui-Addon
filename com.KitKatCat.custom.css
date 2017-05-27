@@ -1,7 +1,8 @@
 /**All Css Code Made By @KitKat-Cat Will Go Here And Any Or All Code May Break At Any Time In The Future.**/
          #ui-dialog-titlebar-close,
-         #ui-dialog-titlebar {
+         #ui-dialog-titlebar, h3 {
 	         display: none;
+		 !important;
          }
 	#modal-header {
 		background-color: #ffffff;
