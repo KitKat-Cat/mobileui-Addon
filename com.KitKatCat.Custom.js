@@ -1,8 +1,7 @@
 /**All Css Code Made By @KitKat-Cat Will Go Here And Any Or All Code May Break At Any Time In The Future.**/
 window.onload = function(){
 	var BODY = document.getElementsByTagName("body");
-BODY.appendChild(''+
-'<!-- The Modal -->'+
+BODY.appendChild('<!-- The Modal -->'+
 '<div id="myModal" class="modal" style="">'+
   '<!-- Modal content -->'+
   '<div id="modal-content">'+
