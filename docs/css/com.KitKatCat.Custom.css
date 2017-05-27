@@ -2,7 +2,6 @@
          #ui-dialog-titlebar-close {
 	         display: none;
          }
-	modal-title
          button[title="Close"] {
 	         width: 100%;
 		 background-color: rgba(0,0,0,0);
