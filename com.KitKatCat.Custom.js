@@ -10,6 +10,21 @@ var closeButton = document.getElementsByClassName("close")[0];
 closeButton.onclick = function() {
     MODAL.style.display = "none";
 }
+document.write("<!-- The Modal -->");
+document.write("<div id=\"myModal\" class=\"modal\" style=\"\">");
+document.write("  <!-- Modal content -->");
+document.write("  <div id=\"modal-content\">");
+document.write("    <div id=\"modal-header\" class=\"white\">");
+document.write("      <h3 id=\"modal-title\"><\/h3>");
+document.write("    <\/div>");
+document.write("    <div>");
+document.write("    <p id=\"modal-body\"><\/p>");
+document.write("    <div class=\"actions\">");
+document.write("	    <button class=\"close\" title=\"Close\">OK<\/button>");
+document.write("    <\/div>");
+document.write("    <\/div>");
+document.write("  <\/div>");
+document.write("<\/div>'");
 
 function UIalert(Message, title) {
 	var Modal = document.getElementById('myModal');
